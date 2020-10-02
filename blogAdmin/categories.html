@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- ico font -->
+        <link rel="stylesheet" href="assets/css/icofont.min.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="assets/css/all.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive css -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <title>Categories.html</title>
+    </head>
+
+    <body>
+        <!--====== Header Start ======-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <a class="navbar-brand" href="index.html">Shuvom Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-plus-square"></i>Add Post</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-user-plus"></i>Add User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-user"></i>Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><i class="fas fa-power-off"></i>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--====== Header End ======-->
+
+        <!--====== SidePanel Start ======-->
+        <section class="sidepanel-area mt-5 pt-1">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html" class="d-board">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Deshboard
+                </a>
+                <a href="#">
+                    <i class="fas fa-file-alt"></i>
+                    All Post
+                    <span class="badge">17</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-comments"></i>
+                    Comments
+                    <span class="badge">27</span>
+                </a>
+                <a href="categories.html">
+                    <i class="fas fa-folder-open"></i>
+                    Categories
+                    <span class="badge">12</span>
+                </a>
+                <a href="users.html">
+                    <i class="fas fa-user-friends"></i>
+                    Users
+                    <span class="badge">5</span>
+                </a>
+            </div>
+
+            <div id="main">
+                <button id="open" class="openbtn" onclick="openNav()">☰</button>
+                <!-- Deshboard Area -->
+                <section class="deshboard-area px-5">
+                    <h1 class="text-center mb-4 border-bottom py-5"><i class="fas fa-folder-open mr-3"></i>Categories
+                        <small>Different Categories</small></h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page"><a href="index.html"><i
+                                        class="fas fa-tachometer-alt mr-1"></i>Deshboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="categories.html"><i
+                                        class="fas fa-folder-open mr-1"></i>Categories</a></li>
+                        </ol>
+                    </nav>
+
+                    <!-- Categories Area -->
+                    <div class="category-area">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="category">Category Name</label>
+                                        <input type="text" placeholder="Category Name" class="form-control mt-2">
+                                        <input type="submit" value="Add Category" class="btn btn-warning px-4 mt-2">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-8">
+                                <table class="table table-hover table-striped table-bordered text-center">
+                                    <thead>
+                                        <th>Sr #</th>
+                                        <th>Category Name</th>
+                                        <th>Posts</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Tech News</td>
+                                            <td>4</td>
+                                            <td><a href="#"><i class="fas fa-pencil-alt"></i></a></td>
+                                            <td><a href="#"><i class="fas fa-times"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>News</td>
+                                            <td>9</td>
+                                            <td><a href="#"><i class="fas fa-pencil-alt"></i></a></i></td>
+                                            <td><a href="#"><i class="fas fa-times"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Tech</td>
+                                            <td>3</td>
+                                            <td><a href="#"><i class="fas fa-pencil-alt"></i></a></td>
+                                            <td><a href="#"><i class="fas fa-times"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Banlga News</td>
+                                            <td>7</td>
+                                            <td><a href="#"><i class="fas fa-pencil-alt"></i></a></td>
+                                            <td><a href="#"><i class="fas fa-times"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>English News</td>
+                                            <td>5</td>
+                                            <td><a href="#"><i class="fas fa-pencil-alt"></i></a></td>
+                                            <td><a href="#"><i class="fas fa-times"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--====== Footer Area Start ======-->
+                <footer class="footer bg-primary py-3 sticky-bottom">
+                    <div class="container">
+                        <div class="Copyright">
+                            <span class="text-light">&copy; Copyright by <a href="https://shuvom.com">Shuvo Sarker</a>
+                                All
+                                Rights Reserved -
+                                2020</span>
+                        </div>
+                    </div>
+                </footer>
+                <!--====== Footer Area End ======-->
+            </div>
+        </section>
+        <!--====== SidePanel End ======-->
+
+
+
+
+        <!--====== All JavaScripts ======-->
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>

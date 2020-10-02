@@ -1,0 +1,346 @@
+/*===================================================
+    Google Fonts 
+=====================================================*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+/*===================================================
+    Reset CSS Start 
+=====================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+a {
+    color: #343A40;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: rgb(255, 156, 7);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #346;
+}
+
+p {
+    color: #567;
+    margin: 0;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.d-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.ptb-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.mtb-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.bg-dark {
+    background: #000 !important;
+}
+
+/*===================================================
+    Reset CSS End 
+=====================================================*/
+
+
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.nav-link i {
+    margin-right: 7.5px;
+}
+
+.dropdown-menu {
+    background: transparent;
+    border: none;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+    color: #ddd;
+    background: #000;
+    opacity: 0.8;
+
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+    background: #000;
+    color: #fff;
+    opacity: 1;
+}
+
+.dropdown .dropdown-menu .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+
+/*===================================================
+    Hero CSS Start
+=====================================================*/
+
+.jumbotron {
+    background: url("../images/pexels-photo-452738.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 0;
+}
+
+.jumbotron::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.jumbotron>* {
+    z-index: 2;
+    position: relative;
+}
+
+/*===================================================
+    Hero CSS End
+=====================================================*/
+
+
+/*===================================================
+    Content CSS Start
+=====================================================*/
+.content {
+    background: #ddd;
+}
+
+.widgets h4 {
+    /* border: 1px solid #FFC107; */
+    padding: 7.5px;
+    margin-bottom: 20px;
+    border-left: 10px solid #FFC107;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* background: rgb(255, 240, 195); */
+}
+
+.widget-post-area {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.widget-post-area:last-child {
+    border-bottom: none;
+}
+
+.widget-post-area h6 {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.category-area {
+    margin-bottom: 20px;
+}
+
+.category-area ul {
+    list-style-type: none;
+}
+
+.category-area ul li a {
+    text-transform: capitalize;
+    padding: 5px 0;
+    display: block;
+}
+
+.social-area .nav-link {
+    padding: 0;
+    margin: 0 !important;
+}
+
+.social-area .nav-link i {
+    background: #FFC107;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #334;
+    text-align: center;
+    margin: 0;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.carousel-caption {
+    background: #fff;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
+}
+
+.single-post-picture img {
+    width: 100%;
+}
+
+.post-title p {
+    margin: 0 !important;
+}
+
+.single-post-text p {
+    font-size: 16px;
+    /* word-spacing: 2px; */
+    text-align: justify;
+    line-height: 28px;
+}
+
+.single-post-extra {
+    border-top: 1px solid #ddd;
+}
+
+.single-post-extra a {
+    border-right: 2px solid #aaa;
+}
+
+.single-post-extra a:last-child {
+    border-right: none;
+}
+
+.post-pagination {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.post-pagination>* {
+    font-size: 20px;
+}
+
+.page-item .page-link {
+    color: #343A40;
+    padding: 15px 30px;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 .2rem rgba(255, 227, 0, 0.25);
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #343A40;
+    background-color: #FFC107;
+    border-color: #FFC107;
+}
+
+
+/*===================================================
+    Content CSS End
+=====================================================*/
+
+
+/*===================================================
+    Contact Form CSS Start
+=====================================================*/
+.contact-form label {
+    font-weight: 500;
+    color: #567;
+}
+
+.form-control::placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+
+/*===================================================
+    Contact Form CSS End
+=====================================================*/
+
+
+.about-author h5 {
+    border-left: 5px solid #FFC107;
+    padding-left: 10px;
+}
+
+.single-people img {
+    max-width: 100px;
+    display: block;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,283 @@
+/*===================================================
+    Google Fonts 
+=====================================================*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+/*===================================================
+    Reset CSS Start 
+=====================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+a {
+    color: #343A40;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: rgb(255, 156, 7);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #346;
+}
+
+p {
+    color: #567;
+    margin: 0;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.d-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.ptb-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.mtb-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.bg-dark {
+    background: #000 !important;
+}
+
+/*===================================================
+    Reset CSS End 
+=====================================================*/
+
+.login {
+    width: 500px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 30px 0 #ddd;
+    border-radius: 15px;
+}
+
+input.form-control {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    border-left: 5px solid #ddd;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.form-control:focus {
+    border-color: #FFC107;
+    box-shadow: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-weight: 500;
+    color: #fff !important;
+    font-size: 16px;
+}
+
+.nav-link i {
+    margin-right: 5px;
+}
+
+/* Sidepanel Start */
+button#open {
+    position: fixed;
+    z-index: 9999;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    border-bottom: 1px solid #818181;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar a span {
+    background: #818181;
+    color: #000;
+    margin-left: 15px;
+}
+
+.sidebar i {
+    width: 30px;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    font-size: 36px;
+    margin-left: 0;
+    background: #345;
+    border: none;
+    padding: 0px 19px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    min-height: 100%;
+    position: relative;
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* Sidepanel End */
+
+/* Deshboard Area */
+.deshboard-area {
+    margin-top: 4px;
+    padding-bottom: 100px;
+}
+
+.d-panel p,
+.d-panel i {
+    color: #fff;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 10px rgb(211, 211, 211);
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-footer {
+    background: #fff;
+    border-radius: 0 0 10px 10px !important;
+}
+
+.card-footer p,
+.card-footer i {
+    color: #343A40;
+    font-size: 18px;
+}
+
+.user-pic {
+    width: 30px;
+    height: 30px;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

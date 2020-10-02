@@ -1,0 +1,107 @@
+@media (max-width:320px) {
+
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .hero-text h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width:481px) {
+
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .hero-text h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+        text-align: center;
+        display: flex !important;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width:575px) {
+
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .date {
+        padding-bottom: 0 !important;
+        padding-left: 12px !important;
+        text-align: left;
+    }
+
+    .date .day {
+        font-size: 15px;
+        display: inline-block;
+        color: #333333 !important;
+    }
+
+    .date .month {
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .date .year {
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .post-title {
+        padding-top: 0px !important;
+    }
+
+    .page-item .page-link {
+        padding: 10px 10px;
+    }
+
+    .author-area img {
+        display: block;
+        max-width: 150px;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+
+    .about-author h5 {
+        border-left: none;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width:961px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .dropdown .dropdown-menu .dropdown-item {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: none;
+        color: #ddd;
+        background: #222;
+        opacity: 0.8;
+
+    }
+
+    .dropdown .dropdown-menu {
+        padding-top: 0;
+    }
+}
+
+@media (max-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+
+}
+
+@media (max-width:1281px) {
+    /* hi-res laptops and desktops */
+}
